@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.6)
+project(file_wait)
+SET(CMAKE_C_COMPILER "clang-9")
+SET(CMAKE_C_FLAGS "-Wall --std=c2x -O3 -static")
+add_executable(file_wait wait.c)
+install(TARGETS file_wait DESTINATION bin)
