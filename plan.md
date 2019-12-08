@@ -14,10 +14,6 @@
 - [ ] Сервис ожидающий задания
 - [ ] Анализатор
 
-clang-9 --std=c2x wait.c -O3  -static -o file_wait
 strip file_wait
 
-
-1 docker run --rm -it  pack react
-2 sudo ./strace.d react 
-3 docker exec cocky_fermat touch unlock
+pipenv run  sudo python task_runner.py
